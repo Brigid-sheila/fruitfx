@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            background-image: url('your-background-image.jpg'); /* Replace with the path to your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .navbar {
+            background-color: #f39c12;
+            animation: navbarColorChange 5s linear infinite;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 18px;
+            transition: color 0.6s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #333 !important;
+            background-color: grey;
+        }
+
+        @keyframes navbarColorChange {
+            0% {
+                background-color: #f39c12;
+            }
+            50% {
+                background-color: orange;
+            }
+            100% {
+                background-color: grey;
+            }
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: #ffc0cb; /* Light pink */
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .footer .copyright {
+            color: pink;
+            margin-top: 20px;
+        }
+        .team-carousel .carousel-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-carousel .carousel-item h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .team-carousel .carousel-item p {
+            font-size: 1rem;
+            color: gray;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Fruitfix Logo"> Fruitfix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="Teams.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Teams Section -->
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Meet Our Team</h1>
+
+        <!-- Brief Information Section -->
+        <div class="container text-center py-4">
+            <p>Our dedicated team at FruitFix Farm works tirelessly to provide the best quality, fresh, and organic fruits. Each team member brings a unique set of skills and expertise to ensure that we are not only meeting but exceeding customer expectations.</p>
+        </div>
+
+        <div id="teamCarousel" class="carousel slide team-carousel" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <!-- Team Member 1 -->
+                <div class="carousel-item active text-center">
+                    <img src="images/fruit cut.jpg" alt="Team Member 1">
+                    <h5>James Green</h5>
+                    <p>Founder & CEO</p>
+                    <p>James is the visionary behind FruitFix Farm. With over 20 years of experience in sustainable farming and organic produce, he founded FruitFix Farm to provide fresh, locally grown fruits to the community. His passion for agriculture and commitment to eco-friendly farming practices have earned him recognition in the sustainable farming industry. James holds a degree in Agricultural Science from the University of California, Davis, and is a member of the Organic Farming Association.</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="carousel-item text-center">
+                    <img src="team-member2.jpg" alt="Team Member 2">
+                    <h5>Linda Martinez</h5>
+                    <p>Chief Operations Officer</p>
+                    <p>Linda oversees the day-to-day operations at FruitFix Farm, ensuring that everything runs smoothly. With over 15 years of experience in agricultural logistics and supply chain management, Linda is responsible for streamlining processes, managing inventory, and coordinating with distributors. Her expertise in farm-to-table logistics ensures that our customers receive fresh produce every time. Linda holds an MBA in Supply Chain Management from Stanford University.</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="carousel-item text-center">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h5>Michael Brown</h5>
+                    <p>Farm Manager</p>
+                    <p>Michael is in charge of managing the farming operations at FruitFix. He works closely with the farming team to ensure that crops are grown according to the highest standards of quality and sustainability. With a background in horticulture and organic farming techniques, Michael is passionate about developing innovative approaches to farming. He has been with the farm for 10 years and is known for his expertise in soil health and crop rotation.</p>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="carousel-item text-center">
+                    <img src="team-member4.jpg" alt="Team Member 4">
+                    <h5>Rachel Green</h5>
+                    <p>Marketing Director</p>
+                    <p>Rachel is responsible for shaping and executing the marketing strategy at FruitFix Farm. She leverages her expertise in digital marketing and social media to build awareness about the farm's commitment to providing fresh, organic fruits. Rachel's creative campaigns have helped FruitFix establish a loyal customer base and attract new business. She holds a degree in Marketing from the University of Florida and has over 10 years of experience in the industry.</p>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="carousel-item text-center">
+                    <img src="team-member5.jpg" alt="Team Member 5">
+                    <h5>David Lee</h5>
+                    <p>Head of Sales</p>
+                    <p>David leads the sales team at FruitFix Farm, building strong relationships with retailers, distributors, and local markets. His ability to understand customer needs and tailor solutions has been key to expanding the farm’s reach across regions. With a background in business development and sales strategy, David has played a pivotal role in growing the company’s market presence. He holds a degree in Business Administration from Harvard University and is passionate about sustainability in the food industry.</p>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#teamCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#teamCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6>Contact Details</h6>
+                    <p>Email: info@company.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Address</h6>
+                    <p>123 Main Street</p>
+                    <p>City, Country</p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Follow Us</h6>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-facebook fa-lg mr-2"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-twitter fa-lg mr-2"></i></a>
+                    <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-lg mr-2"></i></a>
+                </div>
+            </div>
+            <hr style="background-color: white;">
+            <p class="text-center copyright">&copy; <span id="year"></span> Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

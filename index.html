@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitfix Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-size: 18px;
+            background-color: #df14ac;
+        }
+
+        .hero {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero .banner {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .hero .banner img {
+            width: 33.33%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white !important;
+            padding: 15px;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #f39c12 !important;
+        }
+
+        .nav-item.active .nav-link {
+            color: #f39c12 !important;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-social-icons a {
+            color: white;
+            font-size: 30px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-social-icons a:hover {
+            color: #f39c12;
+        }
+
+        .quick-access {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .quick-access .card {
+            width: 20%;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+
+        .quick-access .card img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .quick-access .card:hover {
+            transform: scale(1.05);
+        }
+
+        .advertising {
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .advertising h2 {
+            font-size: 30px;
+        }
+
+        .advertising p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" height="70">Fruitfix
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="Teams.html">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Fresh Fruits, Straight From the Farm!</h1>
+        <p>Explore the best selection of seasonal fruits. Taste the freshness in every bite.</p>
+
+        <div class="banner">
+            <img src="images/pixie3.jpg" alt="Pixie3">
+            <img src="images/pixie1.jpg" alt="Pixie1">
+            <img src="images/mango1.jpg" alt="Mango1">
+        </div>
+    </div>
+
+    <!-- Advertising Information Section -->
+    <section class="advertising">
+        <h2>Fresh Fruits Just for You</h2>
+        <p>Our premium selection of fruits like <strong>pixels</strong>, <strong>oranges</strong>, and <strong>mangoes</strong> are handpicked to deliver maximum freshness and flavor.</p>
+        <p><strong>Order now to enjoy the goodness of nature delivered straight to your doorsteps!</strong></p>
+    </section>
+
+    <!-- Quick Access: Featured Fruits -->
+    <section class="quick-access">
+        <div class="card">
+            <img src="images/pixie5.jpg" alt="Pixels">
+            <div class="card-body">
+                <h5 class="card-title">Pixels</h5>
+                <p class="card-text">Delicious and fresh pixels straight from the orchard!</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/pixie1.jpg" alt="Oranges">
+            <div class="card-body">
+                <h5 class="card-title">Oranges</h5>
+                <p class="card-text">Juicy, sweet oranges to brighten your day.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/mango1.jpg" alt="Mangoes">
+            <div class="card-body">
+                <h5 class="card-title">Mangoes</h5>
+                <p class="card-text">The freshest, ripest mangoes you'll ever taste!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fruitfix. All Rights Reserved.</p>
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to cycle images forward continuously
+        const banner = document.querySelector('.hero .banner');
+        const images = document.querySelectorAll('.hero .banner img');
+        const imageCount = images.length;
+        let currentIndex = 0;
+
+        function slideBanner() {
+            currentIndex++;
+            if (currentIndex >= imageCount) {
+                currentIndex = 0;
+                banner.style.transition = 'none'; // Remove transition for instant reset
+                banner.style.transform = `translateX(0)`;
+                setTimeout(() => {
+                    banner.style.transition = 'transform 0.5s ease-in-out'; // Reapply transition
+                    slideBanner();
+                }, 20); // Small delay to apply transition effect correctly
+            } else {
+                banner.style.transform = `translateX(-${currentIndex * (100 / imageCount)}%)`;
+            }
+        }
+
+        // Start the slideshow with a 2-second interval
+        setInterval(slideBanner, 2000);
+    </script>
+
+</body>
+</html>
